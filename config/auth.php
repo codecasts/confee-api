@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Confee\User::class,
+            'model' => Confee\Domains\Users\User::class,
         ],
 
         // 'users' => [
