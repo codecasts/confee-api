@@ -4,8 +4,9 @@ namespace Confee\Domains\Users;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Confee\Domains\Users\Contracts\User as UserContract;
 
-class User extends Authenticatable
+class User extends Authenticatable implements UserContract
 {
     use Notifiable;
 
