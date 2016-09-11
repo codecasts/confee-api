@@ -1,6 +1,6 @@
 <?php
 
-namespace Confee\Http\Middleware;
+namespace Confee\Units\Core\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

@@ -2,9 +2,9 @@
 
 namespace Confee\Http\Controllers\Auth;
 
+use Confee\Support\Http\Controllers\Controller;
 use Confee\User;
 use Validator;
-use Confee\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

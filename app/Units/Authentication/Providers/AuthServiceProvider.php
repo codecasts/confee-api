@@ -1,6 +1,6 @@
 <?php
 
-namespace Confee\Providers;
+namespace Confee\Units\Authentication\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

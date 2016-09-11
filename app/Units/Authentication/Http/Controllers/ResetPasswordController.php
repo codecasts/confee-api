@@ -2,7 +2,7 @@
 
 namespace Confee\Http\Controllers\Auth;
 
-use Confee\Http\Controllers\Controller;
+use Confee\Support\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller
