@@ -31,7 +31,10 @@ class Api extends RouteFile
     protected function userRoutes()
     {
         $this->router->get('user', function (Request $request) {
-            return $request->user();
+            //return $request->user();
+            return [
+                'message' => 'user page',
+            ];
         })->middleware('auth:api');
     }
 
