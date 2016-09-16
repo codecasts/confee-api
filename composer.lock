@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e4d924dd1341a7314f47a49a9b2237d",
-    "content-hash": "e53592e87f4076cb43da553d6a47da46",
+    "hash": "8a79ec24bd415dfc2d9a39803dd7bb2b",
+    "content-hash": "b0694885581f5a2d50a261793be73433",
     "packages": [
         {
             "name": "artesaos/migrator",
@@ -39,6 +39,63 @@
             ],
             "description": "Namespaced Migrations for Laravel 5.1+",
             "time": "2016-08-25 03:36:30"
+        },
+        {
+            "name": "artesaos/warehouse",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/warehouse.git",
+                "reference": "8f09a43eb14b3105420b39188b79b3d41b0e768b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/warehouse/zipball/8f09a43eb14b3105420b39188b79b3d41b0e768b",
+                "reference": "8f09a43eb14b3105420b39188b79b3d41b0e768b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5",
+                "illuminate/database": "~5",
+                "illuminate/pagination": "~5",
+                "illuminate/support": "~5",
+                "league/fractal": "~0.14",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/container": "~5",
+                "illuminate/http": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Artesaos\\Warehouse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vinicius Reis",
+                    "email": "luiz.vinicius73@gmail.com"
+                },
+                {
+                    "name": "Diego Hernandes",
+                    "email": "diego@hernandev.com"
+                }
+            ],
+            "description": "Artesãos Warehouse V2 - A simple and direct approach to repositories!",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "laravel5",
+                "model",
+                "repository",
+                "warehouse"
+            ],
+            "time": "2016-09-16 05:52:31"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -548,6 +605,69 @@
                 "storage"
             ],
             "time": "2016-08-10 08:55:11"
+        },
+        {
+            "name": "league/fractal",
+            "version": "0.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "56ad8933fbb40328ca3321c84143b2c16186eebf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/56ad8933fbb40328ca3321c84143b2c16186eebf",
+                "reference": "56ad8933fbb40328ca3321c84143b2c16186eebf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2016-07-21 09:56:14"
         },
         {
             "name": "monolog/monolog",
