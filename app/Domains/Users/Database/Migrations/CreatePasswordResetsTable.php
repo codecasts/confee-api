@@ -5,7 +5,6 @@ namespace Confee\Domains\Users\Database\Migrations;
 use Confee\Support\Database\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-
 /**
  * Class CreatePasswordResetsTable.
  */

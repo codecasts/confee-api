@@ -5,7 +5,6 @@ namespace Confee\Domains\Users\Database\Factories;
 use Confee\Domains\Users\User;
 use Confee\Support\Database\ModelFactory;
 
-
 /**
  * Class UserFactory.
  */

@@ -23,8 +23,8 @@ class Api extends RouteFile
 
     protected function registerV1Routes()
     {
-        $this->router->group(['prefix' => 'v1'], function() {
-           $this->registerDefaultRoutes();
+        $this->router->group(['prefix' => 'v1'], function () {
+            $this->registerDefaultRoutes();
         });
     }
 
