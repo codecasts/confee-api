@@ -19,7 +19,7 @@ abstract class Migration extends LaravelMigration
         $this->schema = app('db')->connection()->getSchemaBuilder();
     }
 
-    abstract function up();
+    abstract public function up();
 
-    abstract function down();
+    abstract public function down();
 }

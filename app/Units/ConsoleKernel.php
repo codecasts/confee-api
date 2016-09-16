@@ -13,14 +13,13 @@ class ConsoleKernel extends Kernel
      * @var array
      */
     protected $commands = [
-        //
+
     ];
 
     /**
      * Define the application's command schedule.
      *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
+     * @param \Illuminate\Console\Scheduling\Schedule $schedule
      */
     protected function schedule(Schedule $schedule)
     {
@@ -30,8 +29,6 @@ class ConsoleKernel extends Kernel
 
     /**
      * Register the Closure based commands for the application.
-     *
-     * @return void
      */
     protected function commands()
     {

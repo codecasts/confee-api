@@ -2,7 +2,6 @@
 
 namespace Confee\Support\Http\Routing;
 
-
 /**
  * Class RouteFile.
  */
@@ -20,6 +19,7 @@ abstract class RouteFile
 
     /**
      * RouteFile constructor.
+     *
      * @param array $options
      */
     public function __construct($options = [])
@@ -29,12 +29,9 @@ abstract class RouteFile
         $this->router = app('router');
     }
 
-    /**
-     *
-     */
     public function register()
     {
-        $this->router->group($this->options, function() {
+        $this->router->group($this->options, function () {
             $this->routes();
         });
     }

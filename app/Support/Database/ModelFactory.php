@@ -5,7 +5,6 @@ namespace Confee\Support\Database;
 use Faker\Generator;
 use Illuminate\Database\Eloquent\Factory;
 
-
 /**
  * Class ModelFactory.
  */
@@ -35,12 +34,9 @@ abstract class ModelFactory
         $this->faker = app()->make(Generator::class);
     }
 
-    /**
-     *
-     */
     public function define()
     {
-        $this->factory->define($this->model, function() {
+        $this->factory->define($this->model, function () {
             return $this->fields();
         });
     }
