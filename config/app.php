@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Migrator\MigrationServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         /**
          * Domains Service Providers...
