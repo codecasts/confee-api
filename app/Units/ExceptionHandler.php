@@ -5,9 +5,6 @@ namespace Confee\Units;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler;
-use Illuminate\Http\Exception\HttpResponseException;
-use Illuminate\Http\Response;
-use Illuminate\Validation\ValidationException;
 
 class ExceptionHandler extends Handler
 {
@@ -38,39 +35,16 @@ class ExceptionHandler extends Handler
     }
 
     /**
-     * Render an exception into a response.
+     * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function render($request, Exception $e)
-    {
-        $e = $this->prepareException($e);
-
-        if ($e instanceof HttpResponseException) {
-            return $e->getResponse();
-        } elseif ($e instanceof AuthenticationException) {
-            return $this->unauthenticated($request, $e);
-        } elseif ($e instanceof ValidationException) {
-            return $this->convertValidationExceptionToResponse($e, $request);
-        }
-
-        return $this->prepareResponse($request, $e);
-    }
-
-    /**
-     * Create a response object from the given validation exception.
+     * @param \Illuminate\Http\Request $request
+     * @param \Exception               $exception
      *
-     * @param  \Illuminate\Validation\ValidationException  $e
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return \Illuminate\Http\Response
      */
-    protected function convertValidationExceptionToResponse(ValidationException $e, $request)
+    public function render($request, Exception $exception)
     {
-        $errors = $e->validator->errors()->getMessages();
-
-        return response()->json($errors, Response::HTTP_UNPROCESSABLE_ENTITY);
+        return parent::render($request, $exception);
     }
 
     /**
@@ -83,6 +57,10 @@ class ExceptionHandler extends Handler
      */
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        return response()->json(['error' => 'Unauthenticated.'], 401);
+        if ($request->expectsJson()) {
+            return response()->json(['error' => 'Unauthenticated.'], 401);
+        }
+
+        return redirect()->guest('login');
     }
 }
