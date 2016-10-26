@@ -15,6 +15,7 @@ class HttpKernel extends Kernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+        \Confee\Units\Core\Http\Middleware\AlwaysExpectsJson::class,
     ];
 
     /**
