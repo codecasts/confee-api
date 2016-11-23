@@ -1,4 +1,4 @@
-# Confee WEB
+# Confee API
 
 Este é o código fonte da série de vídeos [**Laravel Hardcore**](https://codecasts.com.br/series/laravel-hardcore)
 
