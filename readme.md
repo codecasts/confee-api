@@ -19,6 +19,10 @@ docker-compose run api php composer install # instalar dependencias php
 ```
 
 ```shell
+docker-compose run api php artisan key:generate # gerar chave de aplicação
+```
+
+```shell
 docker-compose run api php artisan migrator # rodar migrações
 ```
 
