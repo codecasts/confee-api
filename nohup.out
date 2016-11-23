@@ -1,0 +1,5 @@
+[23-Nov-2016 02:55:38] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[23-Nov-2016 02:55:38] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[23-Nov-2016 02:55:38] NOTICE: fpm is running, pid 8
+[23-Nov-2016 02:55:38] NOTICE: ready to handle connections
+[23-Nov-2016 02:55:38] NOTICE: systemd monitor interval set to 10000ms
