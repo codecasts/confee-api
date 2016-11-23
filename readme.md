@@ -48,10 +48,10 @@ docker-compose run api php artisan # lista de comandos
 ```
 
 ## Dicas
-Existe um arquivo chamado `php` neste projeto, você pode usar ele como *alias* para interagir com o php do projeto.
+Os arquivos `php` e `composer` seste projetos são como *alias* para interagir com o php e composer do projeto.
 
 ```shell
-./php composer install # instalar dependencias php
+./composer install # instalar dependencias php
 ./php artisan key:generate # gerar chave de aplicação
 ./php artisan migrator # rodar migrações
 ```
