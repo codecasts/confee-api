@@ -46,3 +46,14 @@ docker-compose down # mata o serviço
 ```shell
 docker-compose run api php artisan # lista de comandos
 ```
+
+## Dicas
+Existe um arquivo chamado `php` neste projeto, você pode usar ele como *alias* para interagir com o php do projeto.
+
+```shell
+./php composer install # instalar dependencias php
+./php artisan key:generate # gerar chave de aplicação
+./php artisan migrator # rodar migrações
+```
+
+> `./php é importante, pois seu terminal deve executar este arquivo e não o php que possa estar instalado na sua maquina
