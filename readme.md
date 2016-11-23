@@ -56,4 +56,4 @@ Existe um arquivo chamado `php` neste projeto, você pode usar ele como *alias* 
 ./php artisan migrator # rodar migrações
 ```
 
-> `./php é importante, pois seu terminal deve executar este arquivo e não o php que possa estar instalado na sua maquina
+> `./php` é importante, pois seu terminal deve executar este arquivo e não o php que possa estar instalado na sua maquina
