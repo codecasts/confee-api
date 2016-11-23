@@ -37,7 +37,7 @@ docker-compose up -d # sobe o serviço em segundo plano no terminal
 docker-compose down # mata o serviço
 ```
 
-#### Artian
+#### Artisan
 
 ```shell
 docker-compose run api php artisan # lista de comandos
