@@ -15,7 +15,7 @@ Este é o código fonte da série de vídeos [**Laravel Hardcore**](https://code
 ### Instalação
 
 ```shell
-docker-compose run api php composer install # instalar dependencias php
+docker-compose run api composer install # instalar dependencias php
 ```
 
 ```shell
