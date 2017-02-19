@@ -1,9 +1,8 @@
-####
-# ATENTION:
-# Replace all occurences of sandbox with your project's name
-####
+###
+# Confee API Docker-compose file.
+###
 
-# v2 sintax
+# v2 syntax
 version: '2'
 
 # Named volumes
