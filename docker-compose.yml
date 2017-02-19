@@ -40,9 +40,9 @@ services:
     ports:
       - "6379:6379"
 
-  # Confee API (with Caddy)
+  # Confee API (with Nginx)
   api:
-    image: ambientum/php:7.0-caddy
+    image: ambientum/php:7.1-nginx
     container_name: confee-api
     volumes:
       - .:/var/www/app
@@ -54,7 +54,7 @@ services:
 
   # Laravel Queues
   queue:
-    image: ambientum/php:7.0
+    image: ambientum/php:7.1
     container_name: confee-queue
     command: php artisan queue:listen
     volumes:
