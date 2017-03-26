@@ -21,6 +21,7 @@ class Api extends RouteFile
         $this->userRoutes();
         $this->loginRoutes();
         $this->signUpRoutes();
+        $this->passwordRoutes();
     }
 
     protected function registerV1Routes()
@@ -45,5 +46,12 @@ class Api extends RouteFile
     protected function signUpRoutes()
     {
         $this->router->post('register', 'RegisterController@register');
+    }
+
+    protected function passwordRoutes()
+    {
+        // Password Reset Routes...
+        $this->router->post('password/email', 'ForgotPasswordController@sendResetLinkEmail');
+        //$this->router->post('password/reset', 'ResetPasswordController@reset');
     }
 }

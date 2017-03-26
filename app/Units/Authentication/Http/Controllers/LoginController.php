@@ -1,4 +1,5 @@
 <?php
+
 namespace Confee\Units\Authentication\Http\Controllers;
 
 use Confee\Support\Http\Controllers\Controller;
