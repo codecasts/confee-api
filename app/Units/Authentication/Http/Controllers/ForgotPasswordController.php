@@ -2,6 +2,7 @@
 
 namespace Confee\Units\Authentication\Http\Controllers;
 
+use Confee\Domains\Users\User;
 use Confee\Support\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -36,7 +37,12 @@ class ForgotPasswordController extends Controller
      */
     public function sendResetLinkEmail(Request $request)
     {
-        $this->validate($request, ['email' => 'required|email']);
+        $this->validate($request, [
+            'email' => 'required|email',
+            'route' => 'required|url',
+        ]);
+
+        User::$resetPasswordRoute = $request->get('route');
 
         // We will send the password reset link to this user. Once we have attempted
         // to send the link, we will examine the response then see the message we
