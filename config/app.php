@@ -173,6 +173,7 @@ return [
          * Domains Service Providers...
          */
         Confee\Domains\Users\Providers\DomainServiceProvider::class,
+        Confee\Domains\Conferences\Providers\DomainServiceProvider::class,
 
         /*
          * Units Service Providers...
