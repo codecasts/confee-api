@@ -52,6 +52,6 @@ class Api extends RouteFile
     {
         // Password Reset Routes...
         $this->router->post('password/email', 'ForgotPasswordController@sendResetLinkEmail');
-        //$this->router->post('password/reset', 'ResetPasswordController@reset');
+        $this->router->post('password/reset', 'ResetPasswordController@reset');
     }
 }
