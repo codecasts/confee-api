@@ -11,7 +11,7 @@ class UserRepository extends Repository implements UserRepositoryContract
 {
     protected $modelClass = User::class;
 
-    protected function fillModel(Model $model, $data)
+    protected function fillModel(Model $model, array $data = [])
     {
         if (array_key_exists('password', $data)) {
             $data['password'] = bcrypt($data['password']);
