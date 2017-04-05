@@ -46,6 +46,7 @@ services:
     container_name: confee-api
     volumes:
       - .:/var/www/app
+      - ./storage/framework/psysh:/home/ambientum/.config/psysh
     ports:
       - "80:8080"
     links:
@@ -59,6 +60,7 @@ services:
     command: php artisan queue:listen
     volumes:
       - .:/var/www/app
+      - ./storage/framework/psysh:/home/ambientum/.config/psysh
     links:
       - mysql
       - cache
